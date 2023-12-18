@@ -5,14 +5,14 @@ This document describes C code style used by Rokas Baliutavičius in his project
 ## Table of Contents
 
 - [General rules](#general-rules)
+- [Variables](#variables)
 
 
 ## General rules
 
 - Use tabs for indentations
 - Use 1 tab per indent level
-- Do not put spaces between keyword and round or square opening bracket
- 
+- Do not put spaces between keyword and pening bracket
 ```c
 /* OK */
 if(condition)
@@ -44,6 +44,12 @@ if (){}else{}
 int32_t a = sum(4, 3);              /* OK */
 int32_t a = sum (4, 3);             /* Wrong */
 ```
+- Always use `<` and `>` for C Standard Library include files, eg. `#include <stdlib.h>`
+- Always use `""` for custom libraries, eg. `#include "my_library.h"`
+- Always use brackets with `sizeof` operator
+- Use '//' for single-line comments, and '/* comment */' for multi-line commnents
+
+ ## Variables
 
 - Capitalize every word after the first when naming variables (Camel Case)
 - Opening curly bracket is always at the same line as keyword, without a space between closing bracket (`for`, `while`, `do`, `switch`, `if`, ...)
@@ -85,9 +91,5 @@ status = 0;
 bool status = true;
 ```
 
-- Always use brackets with `sizeof` operator
-- Use '//' for single-line comments, and '/* comment */' for multi-line commnents
 - Use English names/text for functions, variables, comments
-- Always use `<` and `>` for C Standard Library include files, eg. `#include <stdlib.h>`
-- Always use `""` for custom libraries, eg. `#include "my_library.h"`
 - 
