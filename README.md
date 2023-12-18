@@ -22,12 +22,12 @@ This document describes C code style used by Rokas Baliutavičius in his project
   - [Clang format integration](#clang-format-integration)
   - [Artistic style configuration](#artistic-style-configuration)
   - [Eclipse formatter](#eclipse-formatter)
- 
-  ## General rules
 
-  - Use tabs for indentations
-  - Use '1' tab per indent level
-  - Do not put spaces between keyword and round or square opening bracket
+## General rules
+
+- Use tabs for indentations
+- Use '1' tab per indent level
+- Do not put spaces between keyword and round or square opening bracket
  
 ```c
 /* OK */
@@ -42,7 +42,8 @@ while (condition)
 for (init;condition;step)
 do {} while (condition)
 ```
-  - Put a space before and after keyword and curly bracket
+- Put a space before and after keyword and curly bracket
+
 ```c
 /* OK */
 if(){} else {}
