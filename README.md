@@ -76,19 +76,6 @@ bool status = true;
 
 - Use English names/text for functions, variables, comments
 - Capitalize every word after the first when naming variables (Camel Case)
-- Use single space before and after comparison and assignment operators
-```c
-a = 3 + 4;              /* OK */
-for(a = 0; a < 5; ++a) /* OK */
-a=3+4;                  /* Wrong */
-a = 3+4;                /* Wrong */
-for(a=0;a<5;++a)       /* Wrong */
-```
-- Use single space after every comma
-```c
-func_name(5, 4);        /* OK */
-func_name(4,3);         /* Wrong */
-```
 - Always declare local variables at the beginning of the block, before first executable statement
 - Declare pointer variables with asterisk aligned to type
 ```c
@@ -119,7 +106,19 @@ void my_func(void);
 void myfunc(void);
 void MyFunc();
 ```
-
+- Use single space before and after comparison and assignment operators
+```c
+a = 3 + 4;              /* OK */
+for(a = 0; a < 5; ++a) /* OK */
+a=3+4;                  /* Wrong */
+a = 3+4;                /* Wrong */
+for(a=0;a<5;++a)       /* Wrong */
+```
+- Use single space after every comma
+```c
+func_name(5, 4);        /* OK */
+func_name(4,3);         /* Wrong */
+```
 - When function returns pointer, align asterisk to return type
 ```c
 /* OK */
