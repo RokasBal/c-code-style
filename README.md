@@ -67,6 +67,19 @@ status = 0;
 #include <stdbool.h>
 bool status = true;
 ```
+- Use single space before and after comparison and assignment operators
+```c
+a = 3 + 4;              /* OK */
+for(a = 0; a < 5; ++a) /* OK */
+a=3+4;                  /* Wrong */
+a = 3+4;                /* Wrong */
+for(a=0;a<5;++a)       /* Wrong */
+```
+- Use single space after every comma
+```c
+func_name(5, 4);        /* OK */
+func_name(4,3);         /* Wrong */
+```
 - Always use `<` and `>` for C Standard Library include files, eg. `#include <stdlib.h>`
 - Always use `""` for custom libraries, eg. `#include "myLibrary.h"`
 - Always use brackets with `sizeof` operator
@@ -105,19 +118,6 @@ void myFunc();
 void my_func(void);
 void myfunc(void);
 void MyFunc();
-```
-- Use single space before and after comparison and assignment operators
-```c
-a = 3 + 4;              /* OK */
-for(a = 0; a < 5; ++a) /* OK */
-a=3+4;                  /* Wrong */
-a = 3+4;                /* Wrong */
-for(a=0;a<5;++a)       /* Wrong */
-```
-- Use single space after every comma
-```c
-func_name(5, 4);        /* OK */
-func_name(4,3);         /* Wrong */
 ```
 - When function returns pointer, align asterisk to return type
 ```c
