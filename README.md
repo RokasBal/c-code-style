@@ -15,7 +15,7 @@ This document describes C code style used by Rokas Baliutavičius in his project
 
 - Use tabs for indentations
 - Use 1 tab per indent level
-- Do not put spaces between keyword and pening bracket
+- Do not put spaces between keyword and opening bracket
 ```c
 /* OK */
 if(condition)
