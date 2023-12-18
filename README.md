@@ -68,7 +68,7 @@ status = 0;
 bool status = true;
 ```
 - Always use `<` and `>` for C Standard Library include files, eg. `#include <stdlib.h>`
-- Always use `""` for custom libraries, eg. `#include "my_library.h"`
+- Always use `""` for custom libraries, eg. `#include "myLibrary.h"`
 - Always use brackets with `sizeof` operator
 - Use '//' for single-line comments, and '/* comment */' for multi-line commnents
 
