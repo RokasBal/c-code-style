@@ -21,13 +21,11 @@ This document describes C code style used by Rokas Baliutavičius in his project
 if(condition)
 while(condition)
 for(init; condition; step)
-do{}while(condition)
 
 /* Wrong */
 if (condition)
 while (condition)
 for (init;condition;step)
-do {} while (condition)
 ```
 - Put a space before and after keyword and curly bracket
 
