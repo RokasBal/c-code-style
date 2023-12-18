@@ -42,7 +42,7 @@ if (){}else{}
 ```
 - Opening curly bracket is always at the same line as keyword, without a space between closing bracket (`for`, `while`, `do`, `switch`, `if`, ...)
 ```c
-size_t i;
+int i;
 for(i = 0; i < 5; ++i){           /* OK */
 }
 for(i = 0; i < 5; ++i) {            /* Wrong */
