@@ -28,7 +28,8 @@ This document describes C code style used by Rokas Baliutavičius in his project
   - Use tabs for indentations
   - Use '1' tab per indent level
   - Do not put spaces between keyword and round or square opening bracket
-  ```c
+ 
+```c
 /* OK */
 if(condition)
 while(condition)
@@ -42,7 +43,7 @@ for (init;condition;step)
 do {} while (condition)
 ```
   - Put a space before and after keyword and curly bracket
-  ```c
+```c
 /* OK */
 if(){} else {}
 do {} while()
@@ -52,4 +53,5 @@ if(){}else{}
 do{}while()
 if (){}else{}
 ```
+
   
