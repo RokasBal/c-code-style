@@ -28,6 +28,7 @@ while (condition)
 for (init;condition;step)
 ```
 - Put a space before and after keyword and curly bracket
+- Do not put a space between a closing bracket and opening curly bracket
 
 ```c
 /* OK */
