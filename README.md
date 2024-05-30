@@ -15,24 +15,24 @@ This document describes C code style used by Rokas Baliutavičius in his project
 
 - Use tabs for indentations
 - Use 1 tab per indent level
-- Do not put spaces between keyword and opening bracket
+- Put spaces between keyword and opening bracket
 ```c
 /* OK */
-if(condition)
-while(condition)
-for(init; condition; step)
-
-/* Wrong */
 if (condition)
 while (condition)
-for (init;condition;step)
+for (init; condition; step)
+
+/* Wrong */
+if(condition)
+while(condition)
+for(init;condition;step)
 ```
 - Put a space before and after keyword and curly bracket
 - Do not put a space between a closing bracket and opening curly bracket
 
 ```c
 /* OK */
-if(){} else {}
+if (){} else {}
 do {} while()
 
 /* Wrong */
@@ -40,23 +40,18 @@ if(){}else{}
 do{}while()
 if (){}else{}
 ```
-- Opening curly bracket is always at the same line as keyword, without a space between closing bracket (`for`, `while`, `do`, `switch`, `if`, ...)
+- Opening curly bracket is always at the same line as keyword, with a space between closing bracket (`for`, `while`, `do`, `switch`, `if`, ...)
 ```c
 int i;
-for(i = 0; i < 5; ++i){           /* OK */
+for(i = 0; i < 5; ++i) {           /* OK */
 }
-for(i = 0; i < 5; ++i) {            /* Wrong */
+for(i = 0; i < 5; ++i){            /* Wrong */
 }
 for (i = 0; i < 5; ++i)             /* Wrong */
 {
 }
 ```
 
-- Do not use space between function name and opening bracket
-```c
-int32_t a = sum(4, 3);              /* OK */
-int32_t a = sum (4, 3);             /* Wrong */
-```
 - Do not use `stdbool.h` library. Use `1` or `0` for `true` or `false` respectively
 ```c
 /* OK */
@@ -70,10 +65,10 @@ bool status = true;
 - Use single space before and after comparison and assignment operators
 ```c
 a = 3 + 4;              /* OK */
-for(a = 0; a < 5; ++a) /* OK */
+for (a = 0; a < 5; ++a) /* OK */
 a=3+4;                  /* Wrong */
 a = 3+4;                /* Wrong */
-for(a=0;a<5;++a)       /* Wrong */
+for (a=0;a<5;++a)       /* Wrong */
 ```
 - Use single space after every comma
 ```c
@@ -142,35 +137,35 @@ my_struct_t * my_func(void);
 - Every compound statement MUST include single indent; when nesting statements, include `1` indent size for each nest
 ```c
 /* OK */
-if(c){
+if (c) {
     do_a();
 } else {
     do_b();
 }
 
 /* Wrong */
-if(c)
+if (c)
     do_a();
 else
     do_b();
 
 /* Wrong */
-if(c) do_a();
+if (c) do_a();
 else do_b();
 ```
 - In case of `if` or `if-else-if` statement, `else` MUST be in the same line as closing bracket of first statement
 ```c
 /* OK */
-if(a){
+if (a) {
 
-} else if(b){
+} else if (b) {
 
 } else {
 
 }
 
 /* Wrong */
-if(a){
+if (a) {
 
 }
 else {
@@ -178,7 +173,7 @@ else {
 }
 
 /* Wrong */
-if(a){
+if (a) {
 
 }
 else
@@ -193,28 +188,28 @@ do {
     int32_t a;
     a = do_a();
     do_b(a);
-} while(check());
+} while (check());
 
 /* Wrong */
 do
 {
 /* ... */
-} while(check());
+} while (check());
 
 /* Wrong */
 do {
 /* ... */
 }
-while(check());
+while (check());
 ```
 
 - Indentation is REQUIRED for every opening bracket
 ```c
-if(a){
+if (a ){
     do_a();
 } else {
     do_b();
-    if(c){
+    if (c) {
         do_c();
     }
 }
